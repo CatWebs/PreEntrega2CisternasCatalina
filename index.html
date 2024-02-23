@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="icon" href="media/logo.jfif" alt="logotipo">
+    <script src="https://kit.fontawesome.com/5b31c92694.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="estilos/styles.css">
+    
+</head>
+<body> 
+    <header class="header">
+        <div class="logo">
+            <img src="media/logo.jfif" alt="Logotipo">
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><i class="fa-solid fa-radio"></i><a href="secciones/radio.html" target="_blank"> Radio Catwebs</a></li>
+                <li><i class="fa-solid fa-laptop-code"></i><a href="secciones/about.html" target="_blank"> Sobre Catwebs</a></li>
+                <li><i class="fa-solid fa-folder-open"></i><a href="secciones/projects.html"  target="_blank"> Proyectos</a></li>
+                <li><i class="fa-solid fa-puzzle-piece"></i><a href="secciones/services.html"  target="_blank"> Servicios</a></li>
+                <li><i class="fa-solid fa-file-lines"></i><a href="#contactoSeccion"> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="projectMain">
+        <div id="mainIndex">
+            <h1>C A T   W E B S   C O D I N G</h1>
+            <h2>Sitio Web en Construcción</h2>
+        </div>     
+    </main>
+    <section id="contactoSeccion">
+        <div class="contactoBox">
+            <div class="contactoFormIndex">
+                <form id="contactIndex" name="formulario" method="post" netlify>
+                    <h2>Contactate con nosotros!</h2>
+                    <label for="name"><input type="text" id="name" name="nombre" placeholder="Ingresa tu Nombre" required></label>
+                    <label for="lastName"><input type="text" name="apellido" id="lastName" placeholder="Ingresa tu Apellido" required></label>
+                    <label for="email"><input type="email" id="email" name="correo" placeholder="Ingresa tu Email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"></label>
+                    <label for="inputPhone"><input type="number" id="inputPhone" name="telefono" placeholder="Ingresa tu Telefono" pattern="[+][0-9]{12}" autocomplete="tel" required></label>
+                    <label for="comentarios"><textarea name="comentarios" id="comentarios" cols="50" rows="6" placeholder="Escribe tus comentarios aquí!"></textarea></label>
+                    <input type="submit" name="enviar" id="botonEnviar">
+            </form>
+            </div>
+            <div class="contactoUbicacion">
+                <h3>Nos puedes encontrar en Concepción, Chile</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102197.95398123794!2d-73.03304560000001!3d-36.8260421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b5cdd2bbc63b%3A0x44cb37b752212698!2zQ29uY2VwY2nDs24sIELDrW8gQsOtbw!5e0!3m2!1ses-419!2scl!4v1707062362768!5m2!1ses-419!2scl" width="100%" height="80%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        
+
+        <div id="contactoDatos" class="container">
+            <div class="contact">
+                <h3>Contacto Cat Webs</h3>
+                <p>Catalina Cisternas</p>
+                <ul>
+                    <li><i class="fa-regular fa-envelope"></i>Email: contacto@catwebs.site</li>
+                    <li><i class="fa-solid fa-arrow-pointer"></i>Sitio Web:   <a class="web" target="_blank" href="https://catwebs.site/">  https://www.catwebs.site</a></li>
+                </ul>
+            </div>
+            <div class="logocat">
+                <img src="media/logo.jfif" alt="Logo CatWebs">
+            </div>
+        </div> 
+    </section>
+
+    <footer class="footer">
+        <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/catalina-cisternas-torres/"><i class="fa-brands fa-linkedin"></i></a>
+        <a id="github" target="_blank" href="https://github.com/CatWebs"><i class="fa-brands fa-github"></i></a>
+        <a id="freecodecamp" target="_blank" href="https://www.freecodecamp.org/fcc8f89ce48-b0a6-413d-9573-d6b627c18677"><i class="fa-brands fa-free-code-camp"></i></a>
+        <a id="whatsapp" target="_blank" href="https://wa.me/56942882461"><i class="fa-brands fa-whatsapp"></i></a>
+        <a id="catwebs" target="_blank" href="https://catwebs.site/"><i class="fa-solid fa-laptop-code"></i></a>
+    </footer>
+    
+    
+</body>
+</html>
