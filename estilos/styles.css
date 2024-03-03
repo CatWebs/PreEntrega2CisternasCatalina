@@ -2,6 +2,13 @@
 /*  font-family: 'Barlow', sans-serif;
     font-family: 'Montserrat', sans-serif; */
 
+:root{
+    --main-color: #87ceeb;
+    --auxiliar-color: #ffc0cb;
+    --dark-color: #0c0909; 
+    --color-resaltado: #6a5acd; 
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +17,7 @@
 }
 
 body{
-    background-color: #ffc0cb;
+    background-color: var(--auxiliar-color);
     color: #000;
 }
 
@@ -25,8 +32,8 @@ h2{
 }
 
 /*********      HEADER      ***********/
-.header{
-    background-color: skyblue;
+.header-type{
+    background-color: var(--main-color);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -34,59 +41,82 @@ h2{
     top: 0;
     right: 0;
     height: 70px;
-    padding: 5px 10%;
+    padding: 5px 3%;
     font-family: monospace, bold;
     font-size: 20px;
     width: 100%;
     z-index: 1;
     border-bottom: 1px solid #000;
 }
-.header .logo img{
-    height: 58px;
+
+
+.header-type .logotipo img{
+    height: 50px;
     width: auto;
     transition: all 0.3s;
     border-radius: 10%;}
 
-.header .logo img:hover{
+.header-type .logotipo img:hover{
     transform: scale(1.15);    
 }
-.header .logo{
+.header-type .logotipo{
     margin-right: auto;
     z-index: 2;
 }
 
-.header .nav-links{
+.header-type .nav-links{
     list-style: none;
 }
 
-.header .nav-links li{
+.header-type .nav-links li{
     display: inline-block;
     padding: 0 12px;
     margin-right: 10px;
     font-weight: bold; 
 }
-.header .nav-links li:hover >a{
-    color: slateblue;
+.header-type .nav-links li:hover >a{
+    color: var(--color-resaltado);
     cursor: pointer;
 }
 
-.header .nav-links li:hover{
-    color: slateblue;
+.header-type .nav-links li:hover{
+    color: var(--color-resaltado);
     transform: scale(1.15); 
 }
 
-.header .nav-links a{
+.header-type .nav-links a{
     color: #000; 
     text-decoration: none;
 }
 
-.header .nav-links li i{
+.header-type .nav-links li i{
     text-align: center;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-size: 20px;}
 
+.dropdown-color{
+    background-color: var(--color-resaltado);
+}
+
+.dropdown-color:hover{
+    background-color: var(--auxiliar-color);
+}
+
+    @media (min-width: 1200px) {
+        .dropdown{
+            visibility: hidden;
+            display: none;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .nav{
+            visibility: hidden;
+            display: none;
+        }
+    }
 /*****************************INDEX*****************************/
 #projectMain{
     padding-top: 70px;
@@ -559,7 +589,7 @@ h2{
 
 .imgText p{
     font-size: 20px;
-    color: slateblue;
+    color: var(--color-resaltado);
 }
 
 .imgText span{
@@ -666,7 +696,7 @@ h2{
 
 .textServices p{
     font-size: 24px;
-    color: slateblue;
+    color: var(--color-resaltado);
     font-family: 'Barlow', sans-serif;
 }
 
@@ -794,7 +824,7 @@ form textarea {
 }
 
 form #botonEnviar{
-    background-color: skyblue;
+    background-color: var(--main-color);
     font-size: 18px;
     padding: 10px;
 }
@@ -854,7 +884,7 @@ form #botonEnviar:hover{
 
 .contact ul li a:hover{
         font-weight: bold;
-        color: slateblue;   
+        color: var(--color-resaltado);   
     }
 
 .web{
@@ -869,7 +899,7 @@ footer{
     display: flex;
     justify-content: center;
     border-top: 0.3px solid #fff;
-    background-color: skyblue;
+    background-color: var(--main-color);
 }
 
 .fa-brands, footer a .fa-laptop-code{
@@ -882,7 +912,7 @@ footer{
 }
     
 .fa-brands:hover, footer a .fa-laptop-code:hover{
-    color: slateblue;
+    color: var(--color-resaltado);
     transform: scale(1.4);
 }
 
