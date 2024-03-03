@@ -44,8 +44,8 @@ h2{
     padding: 5px 3%;
     font-family: monospace, bold;
     font-size: 20px;
-    width: 100%;
-    z-index: 1;
+    width: 100vw;
+    z-index: 2;
     border-bottom: 1px solid #000;
 }
 
@@ -159,7 +159,7 @@ h2{
     padding: 80px 25px ;
 }
 
-.contactoFormIndex{
+.contactFormIndex{
     max-width:50% ;
     border-radius: 15px;
     background-image: url(../media/img/img7.jpeg);
@@ -168,7 +168,7 @@ h2{
     opacity: 0.8;   
 }
 
-.contactoUbicacion{
+.contactUbicacion{
     border: 1px solid #fff;
     border-radius: 15px;
     padding: 50px;
@@ -178,7 +178,7 @@ h2{
     
 }
 
-.contactoUbicacion h3{
+.contactUbicacion h3{
     text-align: center;
     font-size: 30px;
     margin-bottom: 60px;
@@ -186,28 +186,28 @@ h2{
 
 /*FORMULARIO*/
 
-#contactIndex{
+#contactoIndex{
     width: 100%;
     min-height: 60vh;
     padding: 50px; 
 }
 
-#contactIndex h2{
+#contactoIndex h2{
     text-align: center;
     font-size: 30px;
 }
 
-#contactIndex input{
+#contactoIndex input{
     width: 80%;
     font-size: 18px;
     margin: 10px 10%;
 }
 
-#contactIndex input:first-of-type{
+#contactoIndex input:first-of-type{
     margin-top: 20px;
 } 
 
-#contactIndex textarea {
+#contactoIndex textarea {
     width: 80%;
     font-size: 18px;
     margin: 5px 10%;
@@ -216,128 +216,225 @@ h2{
 
 
 /*******************************RADIO CATWEBS***************************************/
-
-#mainContent{
-    padding-top: 70px;
-    padding-bottom: 50px;
-    background-color: #0c0909;
     
-}
     
-#mainContent h1,h2{
-    padding: 5px;
-    font-family: 'Montserrat', sans-serif;
-    
-}
-
-#mainContent h1{
-    margin-top: 40px;
-    text-shadow: 5px #000;
-    color: #fff;
-}
-
-#mainContent h2{
-    color: #fff;
-}
-
-#content{
-    width: 70%;
-    max-height: 60vh;
-    margin: 20px auto;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-around;
-    padding: 0;
-}
-
-#news-1{
-    width: 60%;
-    background-image: linear-gradient( rgba(232, 176, 217, 0.8), rgba(156, 250, 255, 0.7) ), url(../media/img/img6.jpeg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 20px;
-    border-radius: 15px;
-    border: 1px solid #000;
-    text-align: justify; 
-    margin: 15px;
-}
-
-#news-1 h3{
-    margin-bottom: 15px;
-}
-
-.stream{
-    width: 25%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.imgStream{
-    
-    display: flex;
-    margin: 0 auto 25px;  
-}
-
-.imgStream img{
-    border-radius: 15px;
-    max-width: 100%;
+.titulos{
+    padding: 120px 20px 50px;
     height: auto;
+    width: 100%;
+    background-color: #07060a;
+    color: #fff;
+}
+
+#banner-radio{
+    background-color: var(--dark-color);
+}
+
+.banner-container{
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: var(--auxiliar-color);
+}
+
+.carousel-item img{
+    object-fit: cover;
+    border-radius: 20px;
+    object-position:inherit;
+    max-height: 420px;
+}
+
+/*CONTENEDOR DE GRID*/
+
+.grid-contenedor{
+    display: grid;
+    padding: 70px 50px;
+    background-color: #07060a;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 300px);
+    grid-gap: 20px;
+    grid-template-areas: 
+        "stream news news news"
+        "news2 news2 news2 news2"
+        "form form form form"
+        "form form form form"
+        "form form form form"
+        "owner owner logo logo"
+    ;
+}
+
+.item-1{
+    grid-area: stream;
+}
+
+.streamBox{
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    width: 100%;
+    height: 100%;
+    background-image: url(../media/img/stream.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.streamBox audio{
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 80%;
+}
+
+.news{
+    grid-area: news;
+}
+
+.card-body{
+    background-color: var(--auxiliar-color);
+    padding-top: 30px; 
+}
+.card-footer{
+    background-color: var(--auxiliar-color); 
+}
+.card-header{
+    font-size: 22px;
+}
+
+.card{
+    border-bottom: none;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.btn{
+    background-color: var(--main-color);
+    color: #000;
+}
+
+.btn:hover{
+    background-color: var(--color-resaltado);
+}
+
+.news-2{
+    grid-area: news2;
+    background-color: var(--auxiliar-color);
+    border-radius: 20px;
+}
+.news-2 .card-img{
+    max-height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    opacity: 0.3;
+}
+
+.contactoFormRadio{
+    grid-area: form;
+    background: rgb(211, 234, 241);
+    border-radius: 25px;
+}
+   
+#contactoFormRadio{
+    width: 80%;
+    padding: 70px;
+    height: 100%;
+    display: grid; 
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    margin: auto;
+}
+
+.contactoFormRadio input, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  .contactoFormRadio label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+#contactoFormRadio h2{
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+}
+
+
+#contactoFormRadio #botonEnviarRadio{
+    background-color: var(--main-color);
+    font-size: 18px;
+    padding: 10px;
+}   
+
+
+#contactoFormRadio #botonEnviarRadio:hover{
+    transform: scale(1.005);
+    color: #fff;
+}
+
+
+.ownerInfo{
+    grid-area: owner;
     
 }
-.audioStream {
-    margin: 0 auto;
-    display: inline-block;
-    width: 100%;
-    max-width: 300px;
-}
+    .contactoDatosContainerRadio{
+        display: grid; 
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        margin: auto;
+        height: 100%;
+        margin: auto;
+        padding: 40px 0px; 
+        color: #fff; 
+        text-align: center;
+    }
 
-#moreNews{
-    width: 100%;
-    height: 50vh;
-    max-height: 100vh;
-    margin-top: 20px;
-    display: flex;
-    flex-direction:row;
-    padding: 25px;
-    justify-content: center;
-}
+    .contactoDatosContainerRadio h3{
+        padding: 20px;
+        font-size: 30px;
+    }
 
-#news-2{
-    width: 32%;
-    background-image: linear-gradient( rgba(232, 176, 217, 0.8), rgba(156, 250, 255, 0.8) ), url(../media/img/img7.jpeg);
-    background-size:cover;
+    .contactoDatosContainerRadio h4{
+        padding-bottom: 15px;
+        font-size: 22px;
+    }
+    
+    .contactoDatosRadio ul li{
+        padding: 4px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .fa-regular, .fa-solid{
+        margin-right: 20px;
+    }
+
+    .contactoDatosRadio ul li a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+    .contactoDatosRadio ul li a:hover{
+            font-weight: bold;
+            color: var(--color-resaltado);   
+        }
+
+        .contactoDatosRadio .web{
+           padding-left: 10px;
+        }
+
+.logoInfo{
+    grid-area: logo;
+    align-items: center;
+    background-image: url(../media/logo.jfif);
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
-    padding: 20px;
-    border-radius: 15px;
-    border: 1px solid #000;
-    text-align: justify; 
-    margin: 25px;
-}
-
-#news-2 h3{
-    margin-bottom: 15px;
-}
-
-#news-3{
-    width: 32%;
-    background-image: linear-gradient( rgba(232, 176, 217, 0.8), rgba(156, 250, 255, 0.8) ), url(../media/img/img4.jpeg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 20px;
-    border-radius: 15px;
-    border: 1px solid #000;
-    text-align: justify; 
-    margin: 25px;
-}
-
-#news-3 h3{
-    margin-bottom: 15px;
 }
 
 
@@ -793,59 +890,95 @@ h2{
 
 
 /*FORMULARIO DE CONTACTO ----> INICIO*/
-
-#contactForm{
+#contactoSeccion{
     width: 100%;
-    height: 70vh; /*Altura del tamaño de mi navegador*/
+    height: auto;
+}
+
+#contactoForm{
+    width: 100%;
     background: rgb(211, 234, 241);
     padding: 100px;
     border-top: 0.5px solid #fff;
+    display: grid;
 }
 
-form h2{
+#contactoForm h2{
     text-align: center;
     font-size: 30px;
+    color: #000;
 }
 
-form input{
+#contactoForm input{
     width: 50%;
     font-size: 18px;
-    margin: 10px 25%;
+    margin: 0 25%;
 }
 
-input:first-of-type{
+#contactoForm input:first-of-type{
     margin-top: 20px;
 } 
 
-form textarea {
+#contactoForm textarea {
     width: 50%;
     font-size: 18px;
     margin: 5px 25%;
 }
 
-form #botonEnviar{
+#contactoForm #botonEnviar{
     background-color: var(--main-color);
     font-size: 18px;
     padding: 10px;
-}
+}   
 
-form #botonEnviar:hover{
+
+#contactoForm #botonEnviar:hover{
     transform: scale(1.005);
     color: #fff;
 }
+
     /********FORMULARIO DE CONTACTO ----> FIN********/
 
-    /********DATOS DE CONTACTO  ----> FIN********/
-#contactoDatos{
-    background-color: #0c0909;
+    /********DATOS DE CONTACTO  ----> INICIO********/
+.gridContacto{
+    width: 100%;
+    height: 100vh;
+}
+.grid-container-contacto{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70% 20%;
+    grid-template-areas: 
+        "form form"
+        "datos logo";
+    height: 100%;
+    width: 95%;
 }
 
-.container{
+.grid-uno{
+    grid-area: form;
+    background-color: red;
+}
+
+.grid-dos{
+    grid-area: datos;
+    background-color: blue;
+}
+
+.grid-tres{
+    grid-area: logo;
+    background-color: green;
+}
+
+/*************************************************/
+
+#contactoDatos{
+    background-color: #0c0909;
+    margin: 0;
     display: flex;
     justify-content: space-around;
-    height: calc(100vh-50px);
     border-top: 0.3px solid #fff;
-    padding: 40px 0px;
+    padding: 40px 0px;  
 }
 
 .logocat img{
@@ -853,20 +986,20 @@ form #botonEnviar:hover{
     height: 250px;
 }
 
-.contact{
+.contacto{
     color: #fff;
     text-align: center;
     font-size: 22px;
     padding: 40px;
 }
 
-.contact h3{
+.contacto h3{
     padding-bottom: 20px;
     font-size: 30px;
 }
 
 
-.contact ul li{
+.contacto ul li{
     padding: 4px;
     display: flex;
     justify-content: center;
@@ -877,12 +1010,12 @@ form #botonEnviar:hover{
     margin-right: 20px;
 }
 
-.contact ul li a{
+.contacto ul li a{
         text-decoration: none;
         color: #fff;
     }
 
-.contact ul li a:hover{
+.contacto ul li a:hover{
         font-weight: bold;
         color: var(--color-resaltado);   
     }
@@ -890,12 +1023,14 @@ form #botonEnviar:hover{
 .web{
        padding-left: 10px;
     }
+/*************************************************/
 
     /********DATOS DE CONTACTO ----> FIN********/
 
     /********FOOTER ----> INICIO********/
 
 footer{
+    width: 100%;
     display: flex;
     justify-content: center;
     border-top: 0.3px solid #fff;
@@ -917,3 +1052,32 @@ footer{
 }
 
     /********FOOTER ----> FIN********/
+
+
+ /**   
+@media screen and (max-width: 1199px) {
+
+    #contactoForm{
+        width: 100%;
+        padding: 10px;
+    }
+
+    #contactoForm input{
+        width: 100%;
+        font-size: 18px;
+        margin: 0 auto;
+    }  
+    #contactoForm textarea {
+        width: 100%;
+        font-size: 18px;
+        margin: 25px auto;
+    }
+
+    .contactoDatos{
+        display: grid;
+    }
+
+    .logocat{
+        width: 100%;
+    }
+}*/

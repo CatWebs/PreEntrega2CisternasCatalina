@@ -38,60 +38,98 @@
             </ul>
         </nav>
     </header>
-    <main id="mainContent">
+    <section class="titulos">
         <h1>Radio Catwebs</h1>
-        <h2>Para que te concentres y te relajes!</h2>
-        <div id="content">
-            <div class="stream">
-                <div class="imgStream">
-                    <img src="../media/img/stream.jpeg">
-                </div>    
-                <div class="audioStream">
-                    <audio src="../media/audio/lofi-music-5-136397.mp3" controls loop muted autoplay></audio>
+        <h2>Disfruta de nuestro Streaming y Noticias!</h2>
+    </section>
+    <section id="banner-radio">
+        <section class="banner-container">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../media/img/imagen1.jpeg" class="d-block w-100" alt="banner1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/img/img5.jpeg" class="d-block w-100" alt="banner2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/img/img3.jpeg" class="d-block w-100" alt="banner2">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div id="news-1">
-                <h3>Noticias del día</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus amet odit earum aliquid maxime perferendis ipsam ratione cupiditate aut ex error, optio nesciunt dolorum! Natus, repellendus? Sunt nostrum et ipsum!</p>
-            </div>
-        </div>
-        <div id="moreNews">
-            <div id="news-2">
-                <h3>Noticias del día</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus amet odit earum aliquid maxime perferendis ipsam ratione cupiditate aut ex error, optio nesciunt dolorum! Natus, repellendus? Sunt nostrum et ipsum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus amet odit earum aliquid maxime perferendis ipsam ratione cupiditate aut ex error, optio nesciunt dolorum! Natus, repellendus? Sunt nostrum et ipsum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus amet odit earum aliquid maxime perferendis ipsam ratione cupiditate aut ex error, optio nesciunt dolorum! Natus, repellendus? Sunt nostrum et ipsum!</p>
-            </div>
-            <div id="news-3">
-                <h3>Noticias del día</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus amet odit earum aliquid maxime perferendis ipsam ratione cupiditate aut ex error, optio nesciunt dolorum! Natus, repellendus? Sunt nostrum et ipsum!</p>
-            </div>
-        </div>
-    </main>
-    <section id="contactoSeccion">
-        <form id="contactForm" name="formulario" method="post" netlify>
-            <h2>Contactate con nosotros!</h2>
-            <label for="name"><input type="text" id="name" name="nombre" placeholder="Ingresa tu Nombre"></label>
-            <label for="lastName"><input type="text" name="apellido" id="lastName" placeholder="Ingresa tu Apellido"></label>
-            <label for="email"><input type="email" id="email" name="correo" placeholder="Ingresa tu Email"></label>
-            <label for="inputPhone"><input type="number" id="inputPhone" name="telefono" placeholder="Ingresa tu Telefono"></label>
-            <label for="comentarios"><textarea name="comentarios" id="comentarios" cols="50" rows="6" placeholder="Escribe tus comentarios aquí!"></textarea></label>
-            <input type="submit" name="enviar" id="botonEnviar">
-        </form>
-
-
-        <div id="contactoDatos" class="container">
-            <div class="contact">
-                <h3>Contacto Cat Webs</h3>
-                <p>Catalina Cisternas</p>
-                <ul>
-                    <li><i class="fa-regular fa-envelope"></i>Email: contacto@catwebs.site</li>
-                    <li><i class="fa-solid fa-arrow-pointer"></i>Sitio Web:   <a class="web" target="_blank" href="https://catwebs.site/">  https://www.catwebs.site</a></li>
-                </ul>
-            </div>
-            <div class="logocat">
-                <img src="../media/logo.jfif" alt="Logo CatWebs">
-            </div>
-    </div> 
+    </main>     
     </section>
+    <div class="grid-contenedor">
+        <section class="item-1 item">
+                    <div class="streamBox">
+                        <audio src="../media/audio/lofi-music-5-136397.mp3" controls loop muted autoplay></audio>   
+                    </div>
+        </section>
+    
+        <section class="news item">
+            <div class="card text-center">
+                <div class="card-header">
+                  Noticias de la semana
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Sons of the Forest</h5>
+                  <p class="card-text">Uno de los mejores juegos survival del último tiempo se encuentra en oferta en steam</p>
+                  <a href="https://store.steampowered.com/app/1326470/Sons_Of_The_Forest/" class="btn btn-primary">Busca la oferta</a>
+                </div>
+                <div class="card-footer">
+                  Hace 1 semana
+                </div>
+              </div>
+        </section>
+        <section class="news-2 item">
+            <div class="card text-bg-dark">
+                <img src="../media/img/dinogame.jpeg" class="card-img" alt="Dinosaurios versus Robots">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">FESTIVAL DE DINOSAURIOS VERSUS ROBOTS DE STEAM</h5>
+                  <p class="card-text">Del 24 de Febrero al 4 de Marzo a las 19:00 (Hora peninsular).</p>
+                  <p class="card-text">El evento lleno de descuentos, demos y próximos lanzamientos al que puedes acceder en el siguiente enlace!</p><br>
+                  <a href="https://store.steampowered.com/category/dinos_robots" class="btn btn-primary">Busca la oferta</a>
+                  <p class="card-text"><small>Actualizado hace 3 minutos</small></p>
+                </div>
+              </div>
+        </section>
+
+        <section class="contactoFormRadio item">
+                <form id="contactoFormRadio" name="formulario" method="post" netlify>
+                    <h2>Contactate con nosotros!</h2>
+                    <label for="name"><input type="text" id="nombre" name="nombre" placeholder="Ingresa tu Nombre"></label>
+                    <label for="lastName"><input type="text" name="apellido" id="apellido" placeholder="Ingresa tu Apellido"></label>
+                    <label for="email"><input type="email" id="correo" name="correo" placeholder="Ingresa tu Email"></label>
+                    <label for="inputPhone"><input type="number" id="telefono" name="telefono" placeholder="Ingresa tu Telefono"></label>
+                    <label for="comentarios"><textarea name="comentarios" id="comentarios" cols="50" rows="6" placeholder="Escribe tus comentarios aquí!"></textarea></label>
+                    <input type="submit" name="enviar" id="botonEnviarRadio">
+                </form>
+        </section>
+        <div class="ownerInfo item">
+            <div class=" contactoDatosContainerRadio">
+                <div class="contactoDatosRadio">
+                    <h3>Contacto Cat Webs</h3>
+                    <h4>Catalina Cisternas</h4>
+                    <ul>
+                        <li><i class="fa-regular fa-envelope"></i>Email: contacto@catwebs.site</li>
+                        <li><i class="fa-solid fa-arrow-pointer"></i>Sitio Web:   <a class="web" target="_blank" href="https://catwebs.site/">  https://www.catwebs.site</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <div class="logoInfo item">
+        </div>
+    </div>
 
     <footer class="footer">
         <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/catalina-cisternas-torres/"><i class="fa-brands fa-linkedin"></i></a>
