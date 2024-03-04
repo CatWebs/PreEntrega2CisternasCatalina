@@ -25,7 +25,7 @@
                 <li><a class="dropdown-item" href="./about.html"> Sobre Catwebs</a></li>
                 <li><a class="dropdown-item" href="./projects.html"> Proyectos</a></li>
                 <li><a class="dropdown-item" href="./services.html"> Servicios</a></li>
-                <li><a class="dropdown-item" href="#contactoSeccion"> Contacto</a></li>
+                <li><a class="dropdown-item" href="../index.html#datosContacto"> Contacto</a></li>
             </ul>
         </div>
         <nav class="nav">
@@ -35,7 +35,7 @@
                 <li><i class="fa-solid fa-laptop-code"></i><a href="./about.html"> Sobre Catwebs</a></li>
                 <li><i class="fa-solid fa-folder-open"></i><a href="./projects.html"> Proyectos</a></li>
                 <li><i class="fa-solid fa-puzzle-piece"></i><a href="./services.html"> Servicios</a></li>
-                <li><i class="fa-solid fa-file-lines"></i><a href="#contactoSeccion"> Contacto</a></li>
+                <li><i class="fa-solid fa-file-lines"></i><a href="../index.html#datosContacto"> Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -111,31 +111,47 @@
         </div>
     </main>
 
-    <section id="contactoSeccion">
-        <form id="contactoForm" name="formulario" method="post" netlify>
-            <h2>Contactate con nosotros!</h2>
-            <label for="name"><input type="text" id="nombre" name="nombre" placeholder="Ingresa tu Nombre"></label>
-            <label for="lastName"><input type="text" name="apellido" id="apellido" placeholder="Ingresa tu Apellido"></label>
-            <label for="email"><input type="email" id="correo" name="correo" placeholder="Ingresa tu Email"></label>
-            <label for="inputPhone"><input type="number" id="telefono" name="telefono" placeholder="Ingresa tu Telefono"></label>
-            <label for="comentarios"><textarea name="comentarios" id="comentarios" cols="50" rows="6" placeholder="Escribe tus comentarios aquí!"></textarea></label>
-            <input type="submit" name="enviar" id="botonEnviar">
-        </form>
-
-
-        <div id="contactoDatos" class="container-contacto">
-            <div class="contacto">
-                <h3>Contacto Cat Webs</h3>
-                <p>Catalina Cisternas</p>
-                <ul>
-                    <li><i class="fa-regular fa-envelope"></i>Email: contacto@catwebs.site</li>
-                    <li><i class="fa-solid fa-arrow-pointer"></i>Sitio Web:   <a class="web" target="_blank" href="https://catwebs.site/">  https://www.catwebs.site</a></li>
-                </ul>
+    <section id="galeriaProjects">
+        <div container-fluid>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="../media/img/gato2.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>CatWebs</h5>
+                      <p>Una web inspirada en gatitos</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../media/img/gato4.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>catWebs</h5>
+                      <p>Portafolio de desarrollador web en formación</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../media/img/gato3.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>CatWebs</h5>
+                      <p>Cada día un nuevo reto</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="logocat">
-                <img src="../media/logo.jfif" alt="Logo CatWebs">
-            </div>
-        </div> 
+        </div>
     </section>
 
     <footer class="footer">
