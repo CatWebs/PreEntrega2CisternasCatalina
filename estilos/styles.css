@@ -157,7 +157,7 @@ h2{
 /*******************************               RADIO CATWEBS                                ***************************************/
     
     
-.titulos{
+.titulosRadio{
     padding: 120px 20px 50px;
     height: auto;
     width: 100%;
@@ -165,13 +165,18 @@ h2{
     color: #fff;
 }
 
+.titulosRadio h2{
+    font-size: 24px;
+}
+
 #banner-radio{
     background-color: var(--dark-color);
+    padding: 30px;
 }
 
 .banner-container{
     padding: 30px;
-    width: 80%;
+    width: 70%;
     margin: auto;
     border-radius: 20px;
     background-color: var(--auxiliar-color);
@@ -186,25 +191,12 @@ h2{
 
 /* CONTENEDOR DE GRID */
 
-.grid-contenedor{
-    display: grid;
-    padding: 70px 50px;
-    background-color: #07060a;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 300px);
-    grid-gap: 20px;
-    grid-template-areas: 
-        "stream news news news"
-        "news2 news2 news2 news2"
-        "form form form form"
-        "form form form form"
-        "form form form form"
-        "owner owner logo logo"
-    ;
+.row{
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
-
-.item-1{
-    grid-area: stream;
+.item{
+    border-radius: 20px;
 }
 
 .streamBox{
@@ -215,26 +207,19 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-radius: 20px;
 }
-
 .streamBox audio{
     width: 100%;
-    position: relative;
-    left: 0;
-    top: 80%;
-}
-
-.news{
-    grid-area: news;
+    padding:5px;
+    margin: auto;
 }
 
 .card-body{
-    background-color: var(--auxiliar-color);
+    background-color: var(--main-color);
     padding-top: 30px; 
 }
 .card-footer{
-    background-color: var(--auxiliar-color); 
+    background-color: var(--main-color); 
 }
 .card-header{
     font-size: 22px;
@@ -242,10 +227,13 @@ h2{
 
 .card{
     border-bottom: none;
-    border-radius: 20px;
     height: 100%;
 }
 
+.card-body .btn{
+    background-color: var(--dark-color);
+    color: #fff;
+}
 .btn{
     background-color: var(--main-color);
     color: #000;
@@ -258,7 +246,6 @@ h2{
 .news-2{
     grid-area: news2;
     background-color: var(--auxiliar-color);
-    border-radius: 20px;
 }
 .news-2 .card-img{
     max-height: 300px;
@@ -268,14 +255,12 @@ h2{
 }
 
 .contactoFormRadio{
-    grid-area: form;
     background: rgb(211, 234, 241);
-    border-radius: 25px;
 }
    
 #contactoFormRadio{
     width: 80%;
-    padding: 70px;
+    padding: 8%;
     height: 100%;
     display: grid; 
     grid-template-rows: auto;
@@ -316,19 +301,12 @@ h2{
 }
 
 
-.ownerInfo{
-    grid-area: owner;
-    
-}
     .contactoDatosContainerRadio{
         display: grid; 
         grid-template-rows: auto;
         grid-template-columns: 1fr;
         margin: auto;
-        height: 100%;
-        margin: auto;
-        padding: 40px 0px; 
-        color: #fff; 
+        padding: 40px 0px;  
         text-align: center;
     }
 
@@ -355,7 +333,7 @@ h2{
 
     .contactoDatosRadio ul li a{
             text-decoration: none;
-            color: #fff;
+            color: var(--dark-color);
         }
 
     .contactoDatosRadio ul li a:hover{
@@ -364,18 +342,86 @@ h2{
         }
 
         .contactoDatosRadio .web{
-           padding-left: 10px;
+           padding-left: 1%px;
         }
-
-.logoInfo{
-    grid-area: logo;
-    align-items: center;
-    background-image: url(../media/logo.jfif);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+.logoInfo img{
+    object-fit: contain;
+    max-height: 300px;
+    width: auto;
+    margin: 0 auto;
 }
 
+@media (min-width: 375px) and (max-width: 567px) /*Responsive Mobile*/ {
+    .card-header{
+        font-size: 14px;
+    }
+
+    .card-body{
+        font-size: 12px;
+    }
+    
+    .row{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .titulosRadio{
+        padding: 5px 0;
+        margin-top: 70px;
+    }
+
+    .titulosRadio h1{
+        font-size: 16px;
+    }
+
+    .titulosRadio h2{
+        font-size: 14px;
+    }
+
+    .item{
+        min-height: 300px;
+        margin:0;
+        padding:0;
+    }
+
+    .card {
+        height: 400px;
+    }
+
+    .container .col{
+        padding:0;
+    }
+    .contactoDatosRadio h3{
+        font-size: 16px;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    .contactoDatosRadio h4,ul{
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .col1{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+
+    #banner-radio{
+        padding: 0;
+        margin: 0;
+    }
+
+    .container{
+        padding:0;
+    }
+}
 
 
 /*********************************                               PROYECTOS                       ****************************************/
