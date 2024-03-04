@@ -31,7 +31,7 @@ h2{
     text-align: center;
 }
 
-/*********      HEADER      ***********/
+/***************************************************************      HEADER      ***********/
 .header-type{
     background-color: var(--main-color);
     display: flex;
@@ -96,11 +96,13 @@ h2{
     margin: 0;
     font-size: 20px;}
 
-.dropdown-color{
-    background-color: var(--color-resaltado);
-}
+
 
 .dropdown-color:hover{
+    background-color: var(--auxiliar-color);
+}
+
+.dropdown-menu{
     background-color: var(--auxiliar-color);
 }
 
@@ -117,7 +119,9 @@ h2{
             display: none;
         }
     }
-/*****************************INDEX*****************************/
+
+
+/********************************************************************************INDEX*****************************/
 #projectMain{
     padding-top: 70px;
     padding-bottom: 50px;
@@ -184,7 +188,7 @@ h2{
     margin-bottom: 60px;
 }
 
-/*FORMULARIO*/
+/********************************************** *FORMULARIO DEL INDEX.HTML     ************************************************/
 
 #contactoIndex{
     width: 100%;
@@ -215,7 +219,7 @@ h2{
 
 
 
-/*******************************RADIO CATWEBS***************************************/
+/*******************************               RADIO CATWEBS                                ***************************************/
     
     
 .titulos{
@@ -245,7 +249,7 @@ h2{
     max-height: 420px;
 }
 
-/*CONTENEDOR DE GRID*/
+/* CONTENEDOR DE GRID */
 
 .grid-contenedor{
     display: grid;
@@ -438,10 +442,8 @@ h2{
 }
 
 
-/*****************************FIN RADIO CATWEBS*************************************/
 
-
-/**********************************PROYECTOS****************************************/
+/*********************************                               PROYECTOS                       ****************************************/
 
 #projects{
     background-color: #0c0909;
@@ -561,9 +563,7 @@ h2{
 } 
 
 
-/*****************************FIN PROYECTOS*************************************/
-
-/****************************SOBRE CATWEBS*************************************/
+/****************************                         SOBRE CATWEBS                           *************************************/
 
 #mainAbout{
     background-color: #0c0909;
@@ -699,11 +699,7 @@ h2{
 }
 
 
-
-/********************************FIN SOBRE CATWEBS*******************************/
-
-
-/****************************SERVICIOS*************************************/
+/****************************                       SERVICIOS                                  *************************************/
 
 #mainServices{
     background-color: #fff;
@@ -877,19 +873,7 @@ h2{
     background-position: center;
 }
 
-/****************************FIN SERVICIOS*******************************/
-
-
-
-
-
-
-
-
-
-
-
-/*FORMULARIO DE CONTACTO ----> INICIO*/
+/**********************************************              FORMULARIO DE CONTACTO GENERAL               ******************************************/
 #contactoSeccion{
     width: 100%;
     height: auto;
@@ -937,40 +921,9 @@ h2{
     color: #fff;
 }
 
-    /********FORMULARIO DE CONTACTO ----> FIN********/
 
-    /********DATOS DE CONTACTO  ----> INICIO********/
-.gridContacto{
-    width: 100%;
-    height: 100vh;
-}
-.grid-container-contacto{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 70% 20%;
-    grid-template-areas: 
-        "form form"
-        "datos logo";
-    height: 100%;
-    width: 95%;
-}
+/************************************                     DATOS DE CONTACTO GENERAL           ****************************************/
 
-.grid-uno{
-    grid-area: form;
-    background-color: red;
-}
-
-.grid-dos{
-    grid-area: datos;
-    background-color: blue;
-}
-
-.grid-tres{
-    grid-area: logo;
-    background-color: green;
-}
-
-/*************************************************/
 
 #contactoDatos{
     background-color: #0c0909;
@@ -1023,11 +976,8 @@ h2{
 .web{
        padding-left: 10px;
     }
-/*************************************************/
 
-    /********DATOS DE CONTACTO ----> FIN********/
-
-    /********FOOTER ----> INICIO********/
+/*****************************************************                   FOOTER                  **********************************************************/
 
 footer{
     width: 100%;
@@ -1051,33 +1001,5 @@ footer{
     transform: scale(1.4);
 }
 
-    /********FOOTER ----> FIN********/
-
-
  /**   
-@media screen and (max-width: 1199px) {
-
-    #contactoForm{
-        width: 100%;
-        padding: 10px;
-    }
-
-    #contactoForm input{
-        width: 100%;
-        font-size: 18px;
-        margin: 0 auto;
-    }  
-    #contactoForm textarea {
-        width: 100%;
-        font-size: 18px;
-        margin: 25px auto;
-    }
-
-    .contactoDatos{
-        display: grid;
-    }
-
-    .logocat{
-        width: 100%;
-    }
-}*/
+@media screen and (max-width: 1199px) */
