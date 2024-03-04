@@ -153,71 +153,6 @@ h2{
     margin-top: 60px;
 }
 
-.contactoBox{
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding: 80px 25px ;
-}
-
-.contactFormIndex{
-    max-width:50% ;
-    border-radius: 15px;
-    background-image: url(../media/img/img7.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.8;   
-}
-
-.contactUbicacion{
-    border: 1px solid #fff;
-    border-radius: 15px;
-    padding: 50px;
-    background-image: url(../media/img/img2.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-
-.contactUbicacion h3{
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 60px;
-}
-
-/********************************************** *FORMULARIO DEL INDEX.HTML     ************************************************/
-
-#contactoIndex{
-    width: 100%;
-    min-height: 60vh;
-    padding: 50px; 
-}
-
-#contactoIndex h2{
-    text-align: center;
-    font-size: 30px;
-}
-
-#contactoIndex input{
-    width: 80%;
-    font-size: 18px;
-    margin: 10px 10%;
-}
-
-#contactoIndex input:first-of-type{
-    margin-top: 20px;
-} 
-
-#contactoIndex textarea {
-    width: 80%;
-    font-size: 18px;
-    margin: 5px 10%;
-}
-
-
 
 /*******************************               RADIO CATWEBS                                ***************************************/
     
@@ -976,6 +911,88 @@ h2{
 .web{
        padding-left: 10px;
     }
+
+
+
+/*****************************************************        DATOS DE CONTACTO DEL INDEX.HTML                  **********************************************************/
+
+#datosContacto{
+    padding-bottom: 40px;
+}
+
+.contactoFormIndex{
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+#contactoIndex{
+    text-align: center;
+    font-size: 30px;
+    width: 90%;
+    display: grid;
+
+}
+
+#contactoIndex h2{
+    font-size: 30px;
+    padding: 40px;
+    color: #07060a;  
+}
+
+
+#contactoIndex input{
+    width: 100%;
+    font-size: 18px;
+    margin: 10px auto;
+}
+
+
+#contactoIndex textarea {
+    width: 100%;
+    font-size: 18px;
+}
+
+
+.contactoUbicacion{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.contactoUbicacion h3{
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+}
+
+#botonEnviarIndex{
+    background-color: var(--main-color);
+    font-size: 18px;
+    padding: 10px;
+}   
+
+
+#botonEnviarIndex:hover{
+    transform: scale(1.005);
+    color: #fff;
+}
+
+
+/*  CONTENEDOR DE MAPA */
+.iframeMapa{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+}
+.contactoUbicacion iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.containerContactoDatosIndex{
+    width: 100%;
+}
+
 
 /*****************************************************                   FOOTER                  **********************************************************/
 
