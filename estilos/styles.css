@@ -44,7 +44,7 @@ h2{
     padding: 5px 3%;
     font-family: monospace, bold;
     font-size: 20px;
-    width: 100vw;
+    width: 100%;
     z-index: 2;
     border-bottom: 1px solid #000;
 }
@@ -54,14 +54,15 @@ h2{
     height: 50px;
     width: auto;
     transition: all 0.3s;
-    border-radius: 10%;}
+    border-radius: 10px;
+}
 
 .header-type .logotipo img:hover{
     transform: scale(1.15);    
 }
 .header-type .logotipo{
     margin-right: auto;
-    z-index: 2;
+    z-index: 3;
 }
 
 .header-type .nav-links{
@@ -71,7 +72,6 @@ h2{
 .header-type .nav-links li{
     display: inline-block;
     padding: 0 12px;
-    margin-right: 10px;
     font-weight: bold; 
 }
 .header-type .nav-links li:hover >a{
@@ -106,14 +106,14 @@ h2{
     background-color: var(--auxiliar-color);
 }
 
-    @media (min-width: 1200px) {
+    @media only screen and (min-width: 1200px) {
         .dropdown{
             visibility: hidden;
             display: none;
         }
     }
 
-    @media (max-width: 1199px) {
+    @media only screen and (max-width: 1199px) {
         .nav{
             visibility: hidden;
             display: none;
@@ -1042,11 +1042,14 @@ h2{
 /*****************************************************                   FOOTER                  **********************************************************/
 
 footer{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    border-top: 0.3px solid #fff;
     background-color: var(--main-color);
+    text-align: center;
+    border-top: 0.3px solid #fff;
+    
+}
+
+.rrss{
+    margin-top: 10px;
 }
 
 .fa-brands, footer a .fa-laptop-code{
@@ -1055,7 +1058,7 @@ footer{
     width: 50px;
     text-align: center;
     text-decoration: none;
-    padding: 30px 50px;
+    padding: 30px 20px;
 }
     
 .fa-brands:hover, footer a .fa-laptop-code:hover{
@@ -1063,5 +1066,3 @@ footer{
     transform: scale(1.4);
 }
 
- /**   
-@media screen and (max-width: 1199px) */
